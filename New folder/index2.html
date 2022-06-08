@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="check(); return false" >
+        <label for="number">
+            enter 24 hour time format:
+        </label>
+        <input type="number" min="1" max="24" id="inputNum1">
+        <br>
+       <button type="submit">submit</button>
+    </form>
+    <h1 id="result"></h1>
+    <script>
+        function check() {
+
+
+              let inputNum1 = document.querySelector('#inputNum1').value
+               console.log('inputNum1' , inputNum1);
+               let firstinput = Number(inputNum1)
+               let result = "";
+              if(firstinput === 13){
+                  result = "time is 1pm"
+              }
+              if(firstinput === 14){
+                  result = "time is 2pm"
+              }
+              if(firstinput === 15){
+                  result = "time is 3pm"
+              }
+              if(firstinput === 16){
+                  result = "time is 4pm"
+              }
+              if(firstinput === 17){
+                  result = "time is 5pm"
+              }
+              if(firstinput === 18){
+                  result = "time is 6pm"
+              }
+              if(firstinput === 19){
+                  result = "time is 7pm"
+              }
+              if(firstinput === 20){
+                  result = "time is 8pm"
+              }
+              if(firstinput === 21){
+                  result = "time is 9pm"
+              }
+              if(firstinput === 22){
+                  result = "time is 10pm"
+              }
+              if(firstinput === 23){
+                  result = "time is 11pm"
+              }
+              if(firstinput === 24){
+                  result = "time is 12am"
+              }
+              if(firstinput === 1){
+                  result = "time is 1am"
+              }
+              if(firstinput === 2){
+                  result = "time is 2am"
+              }
+              if(firstinput === 3){
+                  result = "time is 3am"
+              }
+              if(firstinput === 4){
+                  result = "time is 4am"
+              }
+              if(firstinput === 5){
+                  result = "time is 5am"
+              }
+              if(firstinput === 6){
+                  result = "time is 6am"
+              }
+              if(firstinput === 7){
+                  result = "time is 7am"
+              }
+              if(firstinput === 8){
+                  result = "time is 8am"
+              }
+              if(firstinput === 9){
+                  result = "time is 9am"
+              }
+              if(firstinput === 10){
+                  result = "time is 10am"
+              }
+              if(firstinput === 11){
+                  result = "time is 11am"
+              }
+              if(firstinput === 12){
+                  result = "time is 12pm"
+              }
+              document.querySelector('#result').innerText = `${result}`
+              
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="check(); return false" >
+        <label for="number">
+            enter number
+        </label>
+        <input type="number" id="inputNum1">
+        <br>
+        <label for="number">
+            enter number
+        </label>
+        <input type="number" id="inputNum2">
+        <br>
+       <button type="submit">submit</button>
+    </form>
+    <h1 id="result"></h1>
+    <script>
+        function check() {
+
+
+              let inputNum1 = document.querySelector('#inputNum1').value
+               console.log('inputNum1' , inputNum1);
+              let inputNum2 = document.querySelector('#inputNum2').value
+               console.log('inputNum2' , inputNum2);
+               let firstinput = Number(inputNum1)
+               let secondinput = Number(inputNum2)
+               let result = "";
+              if(firstinput > secondinput){
+                  result = firstinput
+              }
+              if(firstinput < secondinput){
+                  result = secondinput
+              }
+              if(firstinput === secondinput){
+                  result = "both number is equal"
+              }
+              document.querySelector('#result').innerText = `${result}`
+              
+        }
+    </script>
+</body>
+</html>
